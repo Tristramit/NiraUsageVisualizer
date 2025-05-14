@@ -1,0 +1,242 @@
+/*
+ * File: styles.css
+ * Description: CSS styles for the page injection
+ */
+
+ .nira-visualizer-container {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 20px;
+    margin: 20px 0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+  }
+  
+  .nira-visualizer-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .nira-visualizer-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #1a202c;
+  }
+  
+  .nira-visualizer-select {
+    padding: 6px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    background-color: white;
+    font-size: 0.875rem;
+    cursor: pointer;
+  }
+  
+  .nira-visualizer-warning {
+    background-color: #fee2e2;
+    border-left: 4px solid #ef4444;
+    color: #b91c1c;
+    padding: 12px;
+    margin-bottom: 16px;
+    border-radius: 4px;
+  }
+  
+  .nira-visualizer-warning-title {
+    font-weight: bold;
+  }
+  
+  .nira-visualizer-warning-text {
+    font-size: 0.875rem;
+  }
+  
+  .nira-visualizer-bar-container {
+    margin-bottom: 16px;
+  }
+  
+  .nira-visualizer-bar-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 4px;
+  }
+  
+  .nira-visualizer-bar-label {
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .nira-visualizer-bar-value {
+    color: #6b7280;
+  }
+  
+  .nira-visualizer-progress-container {
+    width: 100%;
+    height: 16px;
+    background-color: #e5e7eb;
+    border-radius: 9999px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .nira-visualizer-progress-bar {
+    height: 100%;
+    border-radius: 9999px;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .nira-visualizer-progress-bar-green {
+    background-color: #10b981;
+  }
+  
+  .nira-visualizer-progress-bar-yellow {
+    background-color: #f59e0b;
+  }
+  
+  .nira-visualizer-progress-bar-red {
+    background-color: #ef4444;
+  }
+  
+  .nira-visualizer-base-limit-indicator {
+    position: absolute;
+    top: 0;
+    height: 100%;
+    border-right: 2px dashed #4b5563;
+  }
+  
+  .nira-visualizer-bar-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 4px;
+    font-size: 0.75rem;
+  }
+  
+  .nira-visualizer-percentage {
+    color: #6b7280;
+  }
+  
+  .nira-visualizer-percentage-exceeded {
+    color: #ef4444;
+    font-weight: bold;
+  }
+  
+  .nira-visualizer-limit-info {
+    color: #6b7280;
+    text-align: right;
+  }
+  
+  .nira-visualizer-exceeded-text {
+    color: #ef4444;
+    margin-left: 8px;
+  }
+  
+  .nira-visualizer-divider {
+    margin: 16px 0;
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+  }
+  
+  .nira-visualizer-asset-count {
+    font-size: 0.875rem;
+    color: #6b7280;
+    margin-bottom: 16px;
+  }
+  
+  .nira-visualizer-section-toggle {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 8px;
+  }
+  
+  .nira-visualizer-section-title {
+    font-weight: bold;
+    color: #4b5563;
+  }
+  
+  .nira-visualizer-section-action {
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .nira-visualizer-additional-storage {
+    background-color: white;
+    padding: 16px;
+    border-radius: 6px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+  }
+  
+  .nira-visualizer-billing-section {
+    margin-bottom: 16px;
+  }
+  
+  .nira-visualizer-billing-label {
+    display: block;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+    margin-bottom: 8px;
+  }
+  
+  .nira-visualizer-billing-select {
+    width: 100%;
+    padding: 8px 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+  }
+  
+  .nira-visualizer-storage-grid {
+    display: grid;
+    grid-gap: 16px;
+  }
+  
+  .nira-visualizer-storage-row {
+    display: flex;
+    align-items: center;
+  }
+  
+  .nira-visualizer-storage-label {
+    width: 100px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #4b5563;
+  }
+  
+  .nira-visualizer-storage-input {
+    width: 64px;
+    padding: 4px 8px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+  }
+  
+  .nira-visualizer-storage-unit {
+    margin-left: 8px;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .nira-visualizer-storage-cost {
+    margin-left: auto;
+    font-size: 0.875rem;
+    color: #6b7280;
+  }
+  
+  .nira-visualizer-total-cost {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #eff6ff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .nira-visualizer-total-cost-label {
+    font-weight: 500;
+  }
+  
+  .nira-visualizer-total-cost-value {
+    font-weight: bold;
+  }
