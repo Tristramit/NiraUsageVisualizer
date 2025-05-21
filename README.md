@@ -1,3 +1,5 @@
-That's the readme file for the extension
+That's an open source project with no intentions of profit making
 
-The extension should be posted soon in the chrome webstore
+There's an extension now published in chrome extension store
+
+https://chromewebstore.google.com/detail/gcpgfcjllonmkhpiebjkdfcdmlocpghg?utm_source=item-share-cb
